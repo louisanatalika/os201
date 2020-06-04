@@ -1,0 +1,26 @@
+Script started on Thu 04 Jun 2020 07:55:51 PM WIB
+louisa.natalika@badak:~$ PS1="$ "
+$ echo $GitHubUser
+louisanatalika
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ eval $PSTAMP
+200604-200514-e9ea-louisa.natalika/>
+$ PS1="\$(eval \$PSTAMP)"
+200604-200553-789f-louisa.natalika/> date
+Thu Jun  4 20:08:05 WIB 2020
+200604-200805-1407-louisa.natalika/> gpg2 --list-keys
+/home/fasilkom/mahasiswa/l/louisa.natalika/.gnupg/pubring.gpg
+-------------------------------------------------------------
+pub   2048R/66891CAF 2020-06-02 [expires: 2021-06-02]
+uid       [ultimate] Louisa Natalika Jovanna (key) <louisa.natalika@ui.ac.id>
+sub   2048R/E4C9BD8D 2020-06-02 [expires: 2021-06-02]
+
+pub   4096R/67DF6DDE 2020-02-13 [expires: 2021-02-12]
+uid       [ unknown] Operating Systems (OS) <operatingsystems@vlsm.org>
+sub   4096R/44170902 2020-02-13 [expires: 2021-02-12]
+
+200604-200844-0169-louisa.natalika/> exit
+exit
+
+Script done on Thu 04 Jun 2020 08:09:15 PM WIB
