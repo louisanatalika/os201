@@ -1,11 +1,11 @@
 Script started on Thu 04 Jun 2020 07:55:51 PM WIB
-louisa.natalika@badak:~$ PS1="$ "
+]0;louisa.natalika@badak: ~louisa.natalika@badak:~$ PS1="$ "
 $ echo $GitHubUser
 louisanatalika
 $ echo $PSTAMP
 TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
 $ eval $PSTAMP
-200604-200514-e9ea-louisa.natalika/>
+200604-200514-e9ea-louisa.natalika/> 
 $ PS1="\$(eval \$PSTAMP)"
 200604-200553-789f-louisa.natalika/> date
 Thu Jun  4 20:08:05 WIB 2020
